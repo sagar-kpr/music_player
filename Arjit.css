@@ -1,0 +1,342 @@
+body {
+    background: linear-gradient(to right, black, grey);
+  }
+  
+  /*COMMON MARGIN TO ALL*/
+  .common-margin {
+    margin: 2%;
+  }
+  
+  /* HEADER PART*/
+  header {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* NAVBAR PART*/
+  .navbar {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .search-form {
+    line-height: 2;
+    margin: 8px;
+  }
+  
+  .search-form input {
+    border-radius: 12px 0px 0px 12px;
+    border: none;
+  }
+  .search-form input:focus {
+    outline: none;
+  }
+  
+  .input-search-bar {
+    padding: 7px;
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+  
+  .input-search-bar i {
+    color: white;
+  }
+  button[type="submit"] {
+    width: 50px;
+    margin-left: -5px;
+    background-color: black;
+    border-radius: 0px 12px 12px 0px;
+    border: none;
+    cursor: pointer;
+  }
+  #log {
+    line-height: 2;
+    margin: 5px;
+  }
+  
+  .log-btn {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 3px !important;
+    cursor: pointer;
+    width: 80px !important;
+    line-height: 2.8;
+    border-radius: 12px !important;
+    transition: all 0.5s ease-in-out;
+  }
+  .log-btn:hover {
+    background-color: blue;
+    transform: scale(1.1);
+  }
+  #log i {
+    color: white;
+    font-size: 1.8rem;
+    margin: 3px;
+  }
+  
+  /* MAIN PART*/
+  main {
+    width: 75%;
+    height: 90%;
+    display: inline-block;
+    animation: 0.8s ease-in-out 0s 1 slide;
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /*HOME PAGE*/
+  #homepage1,
+  #homepage2 {
+    margin-top: 10px;
+    width: 97%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  /*HOME PAGE PART > ARTIST IMAGE AND DETAILS PART*/
+  #arjit-img {
+    width: 250px;
+    height: 250px;
+  }
+  #arjit-img img {
+    width: 100%;
+    height: 100%;
+  }
+  #arjit-detail {
+    width: 50%;
+    height: auto;
+  }
+  @media screen and (max-width: 668px) {
+    #arjit-detail {
+      width: 100%;
+    }
+    #arjit-img {
+      width: 100%;
+    }
+  }
+  .detail {
+    display: flex;
+    margin-top: 18px;
+    justify-content: space-between;
+  
+    flex-wrap: wrap;
+    padding: 7px;
+  }
+  .detail h4 {
+    text-transform: capitalize;
+    margin: 0;
+    color: white;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+  }
+  .detail small {
+    color: white;
+    font-family: sans-serif;
+    text-transform: capitalize;
+  }
+  .detail #text {
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1rem;
+    text-transform: capitalize;
+  }
+  
+  .detail button {
+    width: 100px;
+    color: white;
+    background: linear-gradient(to right, #000080, #990099);
+    line-height: 2.5;
+    border: none;
+    font-family: sans-serif;
+  }
+  
+  /*HOME PAGE2 */
+  #arjit-playlist {
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+  }
+  #playlist-img {
+    color: white;
+    display: flex;
+  
+    width: 20%;
+    height: auto;
+  
+    align-items: center;
+  }
+  #playlist-img img {
+    width: 70px;
+    height: 70px;
+  }
+  #playlist-text {
+    font-family: sans-serif;
+    margin-left: 5px;
+    width: 100px;
+    font-size: 0.8rem;
+    padding-left: 5px;
+  }
+  @media screen and (max-width: 668px) {
+    #playlist-text {
+      margin-left: 5px;
+    }
+  }
+  #playlist-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  
+  #playlist-icon i {
+    color: white;
+    font-size: 1rem;
+  }
+  #playlist-icon:hover .fa-heart {
+    color: #e60000;
+  }
+  
+  /*aside part*/
+  aside {
+    width: 22%;
+    height: auto;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  #similar-artist {
+    height: auto;
+    box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.5);
+    margin-left: 0;
+    padding: 5px;
+    width: 95%;
+  }
+  
+  .h4-font {
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 200;
+  }
+  #similar-artist-box {
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  #similar-artist-detail {
+    height: auto;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+  
+    flex-wrap: wrap;
+    margin: 8px 5px 8.5px 2px;
+  }
+  #similar-artist-img {
+    width: 60px;
+  }
+  #similar-artist-img img {
+    border-radius: 8px;
+  }
+  
+  #similar-artist-name {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  #recently-play {
+    height: auto;
+    width: 95%;
+    box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.5);
+    padding: 5px;
+  
+    margin-left: 0;
+  }
+  
+  /*media query part*/
+  @media screen and (max-width: 768px) {
+    #search-bar,
+    #log {
+      display: none;
+    }
+    main,
+    aside {
+      width: 100%;
+    }
+    #similar-artist {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    #recently-play {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    #similar-artist-box {
+      flex-direction: row;
+      justify-content: space-between;
+  
+      width: 100%;
+    }
+    #similar-artist-img {
+      width: 100px;
+      height: 100px;
+    }
+    #similar-artist-img img {
+      width: 100%;
+      height: 100%;
+    }
+    #similar-artist-detail {
+      flex-direction: column;
+    }
+    #similar-text {
+      margin-top: 15px;
+    }
+    .navbar {
+      justify-content: flex-start;
+    }
+  
+    #logo {
+      margin-right: 60px;
+    }
+    #log {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 268px) {
+    #logo img {
+      width: 150px;
+    }
+  }
+  

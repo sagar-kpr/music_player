@@ -1,0 +1,1074 @@
+body {
+    background: linear-gradient(to right, black, grey);
+  }
+  
+  /*COMMON MARGIN TO ALL*/
+  .common-margin {
+    margin: 2%;
+  }
+  
+  /* HEADER PART*/
+  header {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* NAVBAR PART*/
+  .navbar {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .search-form {
+    line-height: 2;
+    margin: 8px;
+  }
+  
+  .search-form input {
+    border-radius: 12px 0px 0px 12px;
+    border: none;
+  }
+  .search-form input:focus {
+    outline: none;
+  }
+  
+  .input-search-bar {
+    padding: 7px;
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+  
+  .input-search-bar i {
+    color: white;
+  }
+  button[type="submit"] {
+    width: 50px;
+    margin-left: -5px;
+    background-color: black;
+    border-radius: 0px 12px 12px 0px;
+    border: none;
+    cursor: pointer;
+  }
+  #log {
+    line-height: 2;
+    margin: 5px;
+  }
+  
+  .log-btn {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 3px !important;
+    cursor: pointer;
+    width: 80px !important;
+    line-height: 2.8;
+    border-radius: 12px !important;
+    transition: all 0.5s ease-in-out;
+  }
+  .log-btn:hover {
+    background-color: blue;
+    transform: scale(1.1);
+  }
+  #log i {
+    color: white;
+    font-size: 1.8rem;
+    margin: 3px;
+  }
+  
+  /*drop down list*/
+  .dropdown-list {
+    margin: 0;
+    display: none;
+    background-color: linear-gradient(to top, black, grey);
+    box-shadow: 0px 4px 8px 1px black;
+  }
+  
+  .dropdown-list ul {
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+  }
+  
+  .dropdown-menu {
+    display: none;
+  }
+  .dropdown-menu:hover .dropdown-list {
+    display: block;
+    position: absolute;
+    right: 3%;
+  }
+  
+  .dropdown-list li {
+    margin: 0.4rem 0px;
+  }
+  
+  .no-list-style {
+    list-style: none;
+  }
+  
+  .no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+  }
+  
+  .no-list-style li a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+  }
+  .log-btn2 {
+    color: white;
+    width: 60px !important;
+    line-height: 2;
+    border-radius: 10px !important;
+    transition: all 0.5s ease-in-out;
+  }
+  .log-btn2:hover {
+    background-color: blue;
+    transform: scale(1.1);
+  }
+  
+  /*main part*/
+  main {
+    width: 75%;
+    height: 90%;
+    display: inline-block;
+    animation: 0.8s ease-in-out 0s 1 slide;
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* IMAGE SLIDER PART*/
+  .image-slider {
+    width: 97%;
+    height: auto;
+    display: flex;
+    box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  #left-arrow {
+    width: 15px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 42%;
+    font-size: 2.8rem;
+  }
+  #left-arrow a {
+    color: white;
+  }
+  #right-arrow {
+    width: 15px;
+    height: 10px;
+    position: absolute;
+    right: 7px;
+    font-size: 2.8rem;
+    top: 42%;
+  }
+  #right-arrow a {
+    color: white;
+  }
+  
+  /*IMAGE SLIDER > IMAGE1, IMAGE2, IMAGE3 */
+  
+  #img-container1 {
+    display: flex;
+  
+    width: 90%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    transition: all 1s ease-in-out;
+  }
+  #img-container1:target {
+    transform: translateX(-120%);
+  }
+  #img-container2 {
+    display: flex;
+  
+    width: 90%;
+    height: auto;
+    transition: all 1s ease-in-out;
+  }
+  #img-container2:target {
+    transform: translateX(-120%);
+  }
+  
+  #image1 {
+    margin: 3px;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin-top: 30px;
+    background-image: url("https://lyricsraag.com/wp-content/uploads/2019/01/Karan-Aujla-No-Need-song.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s ease-in-out;
+  }
+  #image1:hover {
+    transform: scale(1.3);
+  }
+  
+  #image2 {
+    margin: 3px;
+    width: 600px;
+    height: 250px;
+    display: inline-block;
+    box-shadow: 0 0 15px 5px;
+    background-image: url("https://m.media-amazon.com/images/M/MV5BNmY0OWFlMzYtMDNkZC00YTdhLWI4ZWEtM2I5OWZlYzVkNGQzXkEyXkFqcGdeQXVyNjE0ODc0MDc@._V1_.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+  }
+  #image2:hover {
+    transform: scale(1.1);
+  }
+  #image3 {
+    margin: 3px;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin-top: 30px;
+    background-image: url("https://th.bing.com/th/id/OIP.fslJPe9UyJQLLR265_G7UgHaEo?pid=ImgDet&rs=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s ease-in-out;
+  }
+  #image3:hover {
+    transform: scale(1.3);
+  }
+  #image4 {
+    margin: 3px;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin-top: 30px;
+    background-image: url("https://th.bing.com/th/id/OIP.0rycjx0Ughxhva0pP2cnpgHaHa?pid=ImgDet&rs=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s ease-in-out;
+  }
+  #image4:hover {
+    transform: scale(1.3);
+  }
+  
+  #image5 {
+    margin: 3px;
+    width: 600px;
+    height: 250px;
+    display: inline-block;
+    box-shadow: 0 0 15px 5px;
+    background-image: url("https://images.genius.com/96fbf305d890c99984c2ccc2d7c01227.1000x1000x1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+  }
+  #image5:hover {
+    transform: scale(1.1);
+  }
+  #image6 {
+    margin: 3px;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin-top: 30px;
+    background-image: url("https://th.bing.com/th/id/OIP.rn-VS6GuktcyzD9qJ4uSIQHaG5?pid=ImgDet&rs=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s ease-in-out;
+  }
+  #image6:hover {
+    transform: scale(1.3);
+  }
+  
+  /*LATEST RELEASE*/
+  .latest-release {
+    width: 97%;
+    height: auto;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .h4-font {
+    margin-left: 2%;
+    padding: 5px 0 0 0;
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: capitalize;
+  }
+  
+  /* LATEST RELEASE > ALBUM PART*/
+  #album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  /* LATEST RELEASE > ALBUM PART > ALBUM BOX */
+  #album-box {
+    width: 40%;
+    height: 80px;
+    min-height: 100px;
+    position: relative;
+  
+    margin: 2%;
+    display: flex;
+  }
+  #album-box span {
+    font-size: 0.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    color: white;
+    padding: 8px;
+    text-transform: capitalize;
+  }
+  /* LATEST RELEASE > ALBUM PART > ALBUM BOX > SUB BOX PART*/
+  #sub-box-img1 {
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 1px;
+    background-image: url("https://www.udiscovermusic.com/wp-content/uploads/2020/03/Justin-Bieber-My-World-2-album-cover-820.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #sub-box-img1:hover {
+    box-shadow: 0 0 20px 10px black inset;
+  }
+  #sub-box-img1:hover i {
+    transform: scale(2);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  #sub-box2 {
+    width: 50%;
+    height: 100%;
+  
+    position: relative;
+    margin-left: 1px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  
+  #sub-box3 {
+    width: auto;
+    height: auto;
+    color: white;
+    position: relative;
+    margin-left: 1px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  #sub-box-img2 {
+    background-image: url("https://images.genius.com/96fbf305d890c99984c2ccc2d7c01227.1000x1000x1.jpg");
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 1px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #sub-box-img2:hover {
+    box-shadow: 0 0 20px 10px black inset;
+  }
+  #sub-box-img2:hover i {
+    transform: scale(2);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  #sub-box-img3 {
+    background-image: url("https://i.pinimg.com/originals/b4/47/ee/b447eeebffa50412560e6ac6667f2522.jpg");
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 1px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #sub-box-img3:hover {
+    box-shadow: 0 0 20px 10px black inset;
+  }
+  #sub-box-img3:hover i {
+    transform: scale(2);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  #sub-box-img4 {
+    background-image: url("https://th.bing.com/th/id/R.6933441e85da71c6ba2243fa408befff?rik=ZeHd4tD2tSjpuw&riu=http%3a%2f%2fimg2-ak.lst.fm%2fi%2fu%2far0%2fdbc1b022c37a4fe4cff74416e34925de&ehk=zk08CyS2a%2bw46oIfSRZpLtfEYKfc99Jy869X8q8fsVQ%3d&risl=&pid=ImgRaw&r=0");
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 1px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #sub-box-img4:hover {
+    box-shadow: 0 0 20px 10px black inset;
+  }
+  #sub-box-img4:hover i {
+    transform: scale(2);
+    transition: all 1s ease-in-out;
+    visibility: visible;
+  }
+  
+  /* ANCHOR ICON */
+  .anchor {
+    color: white;
+  }
+  
+  /* POPULAR ARTISTS PART */
+  
+  .popular-artists {
+    width: 97%;
+    height: auto;
+  }
+  
+  #artist {
+    width: inherit;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #artist-name {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+  }
+  
+  /* POPULAR ARTISTS > ARTIST IMAGE 1, 2, 3, 4, 5, 6 */
+  #artist-image1 {
+    width: 100px;
+    height: 100px;
+    margin: 8px 5px 5px 5px;
+    background-image: url("https://th.bing.com/th/id/OIP.cKk70XXpO3NUNQOJ8sINgAHaJQ?pid=ImgDet&rs=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #artist-image2 {
+    width: 100px;
+    height: 100px;
+    margin: 8px 5px 5px 5px;
+    background-image: url("https://akns-images.eonline.com/eol_images/Entire_Site/2020102/rs_1200x1200-201102143618-Bieber3.jpg?fit=around|1080:1080&output-quality=90&crop=1080:1080;center,top");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #artist-image3 {
+    width: 100px;
+    height: 100px;
+    margin: 8px 5px 5px 5px;
+    background-image: url("https://image.winudf.com/v2/image1/Y29tLmJta3NzZXJ2aWNlcy5zaGFraXJhd2FsbHBhcGVyc2hkX3NjcmVlbl83XzE1NDg2MTM5MzNfMDUy/screen-7.jpg?fakeurl=1&type=.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #artist-image4 {
+    width: 100px;
+    height: 100px;
+    margin: 8px 5px 5px 5px;
+    background-image: url("https://th.bing.com/th/id/OIP.4RaOuyzjUOo_JgQpYKe6uQHaE7?pid=ImgDet&rs=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #artist-image5 {
+    width: 100px;
+    height: 100px;
+    margin: 8px 5px 5px 5px;
+    background-image: url("https://th.bing.com/th/id/OIP.gDSqTJ76un7PJJEtTwJunQHaKr?pid=ImgDet&rs=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #artist-image6 {
+    width: 100px;
+    height: 100px;
+    margin: 8px 5px 5px 5px;
+    background-image: url("https://i.scdn.co/image/98961bdd69353c5257d64acee37451987f26fbb1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .visibility i {
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .visibility:hover i {
+    visibility: visible;
+    transform: scale(2);
+  }
+  
+  .effect-image:hover {
+    box-shadow: 0 0 20px 10px black inset;
+  }
+  
+  /* TYPE OF MUSIC PART */
+  .type-of-music {
+    width: 97%;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #music-cat {
+    width: 250px;
+    height: 150px;
+    margin: 8px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 10px 10px 35px 50px rgba(204, 51, 0, 0.5) inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    overflow: hidden;
+  }
+  #music-text {
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+  }
+  .imghover {
+    width: 250px;
+    height: 150px;
+    transition: all 0.7s ease-in-out;
+  }
+  .imghover:hover {
+    transform: scale(1.2);
+  }
+  /*song category*/
+  
+  .latest-songs {
+    width: 97%;
+    height: auto;
+  }
+  
+  #songs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #songs-name {
+    width: 60px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+  }
+  
+  #songs-img-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 32%;
+    word-wrap: break-word;
+    height: auto;
+    justify-content: space-between;
+  
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* HINDI AND ENGLISH SONGS  */
+  
+  #songs-image1 {
+    width: 90%;
+    height: 180px;
+    margin: 8px 5px 5px 5px;
+    position: relative;
+    background-image: url("https://www.xclusivepop.com/wp-content/uploads/2020/05/Justin-Bieber-Baby-ft.-Ludacris.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  #songs-image2 {
+    width: 90%;
+    height: 180px;
+    margin: 8px 5px 5px 5px;
+    position: relative;
+    background-image: url("https://i.scdn.co/image/ab67616d0000b27328b9243d372ed31f3ede5ddc");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    transition: all 0.5s ease-in-out;
+  }
+  #songs-image3 {
+    width: 90%;
+    height: 180px;
+    margin: 8px 5px 5px 5px;
+    position: relative;
+    background-image: url("https://m.media-amazon.com/images/M/MV5BNmY0OWFlMzYtMDNkZC00YTdhLWI4ZWEtM2I5OWZlYzVkNGQzXkEyXkFqcGdeQXVyNjE0ODc0MDc@._V1_.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    transition: all 0.5s ease-in-out;
+  }
+  #songs-image4 {
+    width: 90%;
+    height: 180px;
+    margin: 8px 5px 5px 5px;
+    position: relative;
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5lI5RSEoRAOCSw3H2jJVBFcexnEmnDialgOzK_TWZqdTCezPSW-EOw6509Vvn3NxgWlhQmRmUXRek5XNamvkNldECzgqbblsThazmPgTGOd6IXCZXcQup6ABdvosd8VspivTkde4k_Zm31Gf-RRiWEXjL6c92hDS4Nmx-ccaXUh8d9rZWEFOQtUw/s1350/FOEm-9LXsAoIZDt.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    transition: all 0.5s ease-in-out;
+  }
+  #songs-image5 {
+    width: 90%;
+    height: 180px;
+    margin: 8px 5px 5px 5px;
+    position: relative;
+    background-image: url("https://m.media-amazon.com/images/M/MV5BMmNiMzIyYTgtMzAwOS00MmVkLWI1OWQtODEzZWUxNjdkYTRkXkEyXkFqcGdeQXVyNDE4OTY5NzI@._V1_FMjpg_UX1000_.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    transition: all 0.5s ease-in-out;
+  }
+  #songs-image6 {
+    width: 90%;
+    height: 180px;
+    margin: 8px 5px 5px 5px;
+    position: relative;
+    background-image: url("https://i1.sndcdn.com/artworks-000606112357-l4i4iw-t500x500.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    transition: all 0.5s ease-in-out;
+  }
+  .hindi-song-img1 {
+    background-image: url("https://th.bing.com/th/id/R.81b97ba7efc29e62d72627dbd606840a?rik=gJx0Kt2V1MhNcQ&riu=http%3a%2f%2fabhisays.com%2fwp-content%2fuploads%2f2010%2f02%2fKathik_Calling_Karthik_Movie.jpg&ehk=6EfwIAK1CcLQSDaVFuVpOx89X5SjuzXZBzk%2fwxF4rPg%3d&risl=&pid=ImgRaw&r=0") !important;
+  }
+  .hindi-song-img2 {
+    background-image: url("https://th.bing.com/th/id/R.6dcdb94cd736d6ffaca7b70437bbd144?rik=OStsvB6x4JqDZA&riu=http%3a%2f%2fwww.techoffical.com%2fwp-content%2fuploads%2f2021%2f06%2fDownload-Lut-Gaye-SOng-Techoffical.jpg&ehk=X3Iwucl1I9vbjXeUFTncf%2b2TEVXdQagHZmP7boZRZUE%3d&risl=&pid=ImgRaw&r=0") !important;
+  }
+  .hindi-song-img3 {
+    background-image: url("https://st1.bollywoodlife.com/wp-content/uploads/2016/10/ranbir.jpg?impolicy=Medium_Resize&w=1200&h=800") !important;
+  }
+  .hindi-song-img4 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/e/ec/Ae_Dil_Hai_Mushkil.jpg") !important;
+  }
+  .hindi-song-img5 {
+    background-image: url("https://i.scdn.co/image/ab67616d0000b273eaa7e2355cc3d425d4dc20c9") !important;
+  }
+  .hindi-song-img6 {
+    background-image: url("https://c.saavncdn.com/587/Sulthana-From-Kgf-Chapter-2--Tamil-2022-20220413121001-500x500.jpg") !important;
+  }
+  
+  /*PLAY MUSIC PART */
+  
+  #play-music {
+    display: none;
+  }
+  #play-music:target {
+    display: block;
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(to left, grey, black);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+  }
+  #play-music-img {
+    width: 100px;
+    height: 100px;
+    background-image: url("https://m.media-amazon.com/images/M/MV5BNmY0OWFlMzYtMDNkZC00YTdhLWI4ZWEtM2I5OWZlYzVkNGQzXkEyXkFqcGdeQXVyNjE0ODc0MDc@._V1_.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    margin: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #animate-box {
+    position: absolute;
+    width: 50px;
+    height: auto;
+  
+    display: flex;
+  }
+  
+  #animation1 {
+    width: 8px;
+    height: 35px;
+    background-color: white;
+    margin: 2px;
+    animation: bounce 0.5s linear 1s alternate infinite;
+  }
+  
+  @keyframes bounce {
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: 40px;
+    }
+  }
+  #animation2 {
+    width: 8px;
+    height: 25px;
+    background-color: white;
+    margin: 12px 2px;
+    animation: bounce2 0.5s linear 1s alternate infinite;
+  }
+  @keyframes bounce2 {
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: 30px;
+    }
+  }
+  #animation3 {
+    width: 8px;
+    margin: 21.5px 2px;
+    height: 15px;
+    background-color: white;
+    animation: bounce3 0.5s linear 1s alternate infinite;
+  }
+  @keyframes bounce3 {
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: 20px;
+    }
+  }
+  #play-music-audio {
+    width: 80%;
+    height: auto;
+  
+    margin: 5px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  #indicator,
+  #indicator input {
+    width: 90%;
+    text-align: center;
+  }
+  
+  #un-list {
+    position: relative;
+    width: 80%;
+    display: flex;
+  
+    justify-content: space-between;
+  }
+  #list {
+    display: inline-block;
+  
+    font-size: 1.4rem;
+    color: white;
+    margin-left: -20px;
+  }
+  #list a {
+    color: white;
+  }
+  #icon-box {
+    display: flex;
+    width: 500px;
+  
+    margin-left: 60px;
+  }
+  
+  #play-music-btn {
+    margin-top: none;
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+  #volume-icon {
+    font-size: 1.4rem;
+    margin-top: 55px;
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
+  #volume-icon a {
+    color: white;
+  }
+  #play-music-btn button {
+    cursor: pointer;
+    background-color: gray;
+    border: none;
+    font-size: 1.2rem;
+  }
+  #play-music-btn:hover button {
+    color: white;
+    background-color: black;
+  }
+  
+  /* ASIDE PART*/
+  aside {
+    width: 22%;
+    height: 700px;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  #queue-text {
+    width: 97%;
+    font-family: sans-serif;
+    font-weight: 200;
+    color: white;
+  
+    font-size: 1.5rem;
+  }
+  #queue-text-inside h1 {
+    margin: 0;
+  }
+  #queue-box {
+    width: 97%;
+    height: 100%;
+    overflow: scroll;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  #jubin-playlist {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #playlist-img {
+    color: white;
+    display: flex;
+    width: 20%;
+    height: auto;
+    align-items: center;
+  }
+  #playlist-img img {
+    width: 40px;
+    height: 40px;
+  }
+  #playlist-text {
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    margin-left: 5px;
+    width: 100px;
+  }
+  
+  #playlist-icon a {
+    color: white;
+  }
+  @media screen and (max-width: 960px) {
+    aside {
+      width: 75%;
+    }
+    #un-list,
+    #indicator {
+      margin-left: 0px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      justify-content: flex-start;
+    }
+  
+    #logo {
+      margin-right: 60px;
+    }
+    #log {
+      display: none;
+    }
+    .dropdown-menu {
+      display: block;
+      position: absolute;
+      right: 5px;
+      color: white;
+      font-size: 1.3rem;
+    }
+  
+    main,
+    aside {
+      width: 100%;
+    }
+  
+    .h4-font {
+      text-align: center;
+    }
+    #songs-image1 {
+      width: 80px;
+      height: 120px;
+    }
+    #songs-image2 {
+      width: 80px;
+      height: 120px;
+    }
+    #songs-image3 {
+      width: 80px;
+      height: 120px;
+    }
+    #songs-image4 {
+      width: 80px;
+      height: 120px;
+    }
+    #songs-image5 {
+      width: 80px;
+      height: 120px;
+    }
+    #songs-image6 {
+      width: 80px;
+      height: 120px;
+    }
+    #queue-text {
+      text-align: center;
+    }
+    #icon-box {
+      margin-left: 0;
+    }
+    #un-list,
+    #indicator {
+      margin-left: -50px;
+    }
+  }
+  @media screen and (max-width: 568px) {
+    #search-bar {
+      width: 100%;
+    }
+    .search-form input {
+      width: 85%;
+      padding: 5px;
+    }
+    .search-form button {
+      padding: 6px;
+      width: 15%;
+    }
+  }
+  
+  @media screen and (max-width: 268px) {
+    #logo img {
+      width: 150px;
+    }
+    .search-form input {
+      width: 80%;
+    }
+    .search-form button {
+      width: 20%;
+    }
+  }
+  
